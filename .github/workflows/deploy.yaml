@@ -22,4 +22,4 @@ jobs:
 
       - name: 'Run az commands'
         run: |
-          az resource list --top 5 -o table
+          az group list -o table
