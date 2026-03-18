@@ -22,4 +22,4 @@ jobs:
 
       - name: 'Run az commands'
         run: |
-          az group list -o table
+          echo "Accessible resources:" $(az resource list --query "length(@)")
